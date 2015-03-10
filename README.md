@@ -2,9 +2,7 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-Parses XML [BMFont files](http://www.angelcode.com/products/bmfont/). Other formats:
-
-- [parse-bmfont-ascii](https://www.npmjs.com/package/parse-bmfont-ascii)
+Parses XML [BMFont files](http://www.angelcode.com/products/bmfont/).
 
 Takes a string or Buffer:
 
@@ -23,7 +21,10 @@ fs.readFileSync(__dirname+'/Arial.fnt', function(err, data) {
 
 The spec for the returned JSON object is [here](https://github.com/mattdesl/bmfont2json/wiki/JsonSpec). The input XML should match the spec with a `<font>` root element, see [test/Nexa Light-32.fnt](test/Nexa Light-32.fnt) for an example.
 
-For a CLI version of this tool, see [bmfon2json](https://github.com/mattdesl/bmfont2json). 
+Related modules:
+
+- [parse-bmfont-ascii](https://www.npmjs.com/package/parse-bmfont-ascii) - parses ASCII (text) fonts
+- [bmfon2json](https://github.com/mattdesl/bmfont2json) - a CLI
 
 ## Usage
 
