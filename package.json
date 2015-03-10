@@ -1,0 +1,45 @@
+{
+  "name": "parse-bmfont-xml",
+  "version": "1.0.0",
+  "description": "parses XML BMFont files into a JavaScript object",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "xml2js": "^0.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "xml",
+    "parse",
+    "convert",
+    "bmfont",
+    "bm",
+    "bitmap",
+    "font",
+    "bitmaps",
+    "angel",
+    "angelcode",
+    "code",
+    "text",
+    "gl",
+    "sprite",
+    "sprites",
+    "stackgl"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/parse-bmfont-xml.git"
+  },
+  "homepage": "https://github.com/mattdesl/parse-bmfont-xml",
+  "bugs": {
+    "url": "https://github.com/mattdesl/parse-bmfont-xml/issues"
+  }
+}
