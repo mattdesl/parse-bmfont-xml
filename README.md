@@ -2,7 +2,11 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-Parses XML [BMFont files](http://www.angelcode.com/products/bmfont/). Takes a string or Buffer:
+Parses XML [BMFont files](http://www.angelcode.com/products/bmfont/). Other formats:
+
+- [parse-bmfont-ascii](https://www.npmjs.com/package/parse-bmfont-ascii)
+
+Takes a string or Buffer:
 
 ```js
 var fs = require('fs')
