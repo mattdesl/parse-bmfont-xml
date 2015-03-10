@@ -24,7 +24,7 @@ The spec for the returned JSON object is [here](https://github.com/mattdesl/bmfo
 Related modules:
 
 - [parse-bmfont-ascii](https://www.npmjs.com/package/parse-bmfont-ascii) - parses ASCII (text) fonts
-- [bmfon2json](https://github.com/mattdesl/bmfont2json) - a CLI
+- [bmfon2json](https://github.com/mattdesl/bmfont2json) - wraps this module as a CLI tool
 
 ## Usage
 
