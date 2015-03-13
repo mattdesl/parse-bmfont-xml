@@ -1,12 +1,12 @@
 var test = require('tape')
-var expected = require('./Test.json')
+var expected = require('./NexaLight32.json')
 var fs = require('fs')
 var path = require('path')
 
 var parse = require('../')
 
 test('should parse XML file', function(t) {
-  var file = path.join(__dirname, 'Nexa Light-32.fnt')
+  var file = path.join(__dirname, 'NexaLight32.fnt')
   
   t.plan(5)
   fs.readFile(file, function(err, data) {
