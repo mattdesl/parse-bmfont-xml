@@ -6,7 +6,7 @@ var path = require('path')
 var parse = require('../')
 
 test('should parse XML file', function(t) {
-  var file = path.join(__dirname, 'NexaLight32.fnt')
+  var file = path.join(__dirname, 'NexaLight32.xml')
   
   t.plan(5)
   fs.readFile(file, function(err, data) {

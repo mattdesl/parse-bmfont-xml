@@ -19,6 +19,20 @@ fs.readFileSync(__dirname+'/Arial.fnt', function(err, data) {
 })
 ```
 
+Also works in the browser, for example using XHR:
+
+```js
+var parse = require('parse-bmfont-xml')
+var xhr = require('xhr')
+
+xhr({ uri: 'fonts/NexaLight32.xml' }, function(err, res, body) {
+  if (err)
+    throw err
+  var result = parse(body)
+  console.log(result.info.face)
+})
+```
+
 The spec for the returned JSON object is [here](https://github.com/mattdesl/bmfont2json/wiki/JsonSpec). The input XML should match the spec with a `<font>` root element, see [test/Nexa Light-32.fnt](test/Nexa Light-32.fnt) for an example.
 
 Related modules:
@@ -51,6 +65,10 @@ Parses `data`, a string or Buffer that represents XML data of an AngelCode BMFon
      ]
 }
 ```
+
+If the data is malformed, an error will be thrown.
+
+The browser implementation relies on [xml-parse-from-string](https://github.com/Jam3/xml-parse-from-string), which may not work in environments without valid DOM APIs (like CocoonJS).
 
 ## License
 
