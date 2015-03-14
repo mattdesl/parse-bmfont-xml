@@ -35,10 +35,9 @@ xhr({ uri: 'fonts/NexaLight32.xml' }, function(err, res, body) {
 
 The spec for the returned JSON object is [here](https://github.com/mattdesl/bmfont2json/wiki/JsonSpec). The input XML should match the spec with a `<font>` root element, see [test/Nexa Light-32.fnt](test/Nexa Light-32.fnt) for an example.
 
-Related modules:
+## See Also
 
-- [parse-bmfont-ascii](https://www.npmjs.com/package/parse-bmfont-ascii) - parses ASCII (text) fonts
-- [bmfon2json](https://github.com/mattdesl/bmfont2json) - wraps this module as a CLI tool
+See [text-modules](https://github.com/mattdesl/text-modules) for related modules.
 
 ## Usage
 
