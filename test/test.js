@@ -14,6 +14,7 @@ test('should parse XML file', function(t) {
     if (err) t.fail(err)
 
     var result = parse(data)
+
     t.deepEqual(result, expected, 'should handle Buffer')
     t.deepEqual(parse(data.toString('utf8')), expected, 'should handle string')
     t.equal(result.info.face, 'Nexa Light', 'face parsed')
